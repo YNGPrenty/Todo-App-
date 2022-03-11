@@ -1,0 +1,14 @@
+.Buttons-Container {
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 560px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 700px) {
+    .Buttons-Container {
+      width: 80vw;
+    }
+  }
+  
