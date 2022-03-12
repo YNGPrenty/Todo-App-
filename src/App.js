@@ -126,7 +126,8 @@ function App() {
   return (
     <div>
       <TopBar />
-      <Buttons DeleteCompletedTodo={DeleteCompletedTodo}/>
+      
+      {todos.length ? <Buttons DeleteCompletedTodo={DeleteCompletedTodo}/> : null}
       {todos.length ? null : <h1 id="notodos">Нет задач!</h1>}
       {todos.filter((todo) => todo.important === true).length ? (
         <TodoList
@@ -147,6 +148,7 @@ function App() {
           title="Все задачи"
         />
       ) : null}
+      <div className="emptyspace"/>
       <FooterBar addTodo={addTodo} />
     </div>
   );

@@ -1,8 +1,14 @@
 .Todo-List {
   margin: 0 auto;
-  margin-top: 60px;
-  margin-bottom: 70px;
+  margin-top: 15px;
+  margin-bottom: 0px;
   width: 560px;
+}
+
+.Todo-List h1 {
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 0;
 }
 
 .Todo-List ul {

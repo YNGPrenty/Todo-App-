@@ -19,10 +19,13 @@
 }
 
 .footer-container {
-  display: flex;
-  justify-content: space-between;
   width: 450px;
   margin: 0 auto;
+}
+
+.footer-container form {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-container h5 {
@@ -51,7 +54,10 @@
   .footer-container {
     width: 85vw;
   }
-  .footer-container h5 {
+  .footer-container form{
+    margin: 0px 3.5vw;
+  }
+  .footer-container form h5 {
     display: none;
     transition: 0.3s;
   }

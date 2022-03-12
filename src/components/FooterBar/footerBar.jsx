@@ -8,14 +8,14 @@ export default function FooterBar({ addTodo }) {
   function addTodoHandler(event) {
     event.preventDefault();
     addTodo(value);
-    setValue("")
+    setValue("");
   }
 
   return (
     <div className="footer-bar">
       <div className="footer-container">
-        <h5>Добавить ToDo</h5>
         <form onSubmit={addTodoHandler}>
+          <h5>Добавить ToDo</h5>
           <TextField
             id="outlined-helperText"
             value={value}
